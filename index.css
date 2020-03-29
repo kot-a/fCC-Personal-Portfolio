@@ -1,0 +1,218 @@
+:root {
+    --colorFont: #151424;
+    --colorBackground: #EAEAEA;
+    --colorDetal1: #F77DBF;
+    --colorDetal2: #0DB8FF;
+    --colorDetal3: #FFDD41;
+}
+
+::-moz-selection {
+    color: var(--colorBackground);
+    background: var(--colorDetal2);
+}
+  
+::selection {
+    color: var(--colorBackground);
+    background: var(--colorDetal2);
+}
+
+body {
+    background-color: var(--colorBackground);
+    color: var(--colorFont);
+    font-family: "Lato", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+#navbar {
+    background-color: var(--colorFont);
+    color: var(--colorBackground);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 45px;
+    width: 100%;
+}
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar ul li {
+    padding-right: 45px;
+}
+
+a {
+    color: var(--colorDetal2);
+    text-decoration: none;
+    background-color: none;
+    transition: 0.2s color, 0.2s background-color;
+}
+
+li a {
+    color: var(--colorBackground);
+}
+
+#navWelcome:hover, #navWelcom:active {
+    transition: 0.2s color;
+    color: var(--colorDetal1);
+}
+
+#navProjects:hover, #navProjects:active {
+    transition: 0.2s color;
+    color: var(--colorDetal2);
+}
+
+#navMe:hover, #navMe:active {
+    transition: 0.2s color;
+    color: var(--colorDetal3);
+}
+
+/* section {
+    width: 80%;
+    max-width: 1500px;
+    margin: auto;
+} */
+
+#welcome-section,  #contact {
+    height: 100vh;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#welcome-section {
+    background: linear-gradient(3600deg, var(--colorDetal1) 50%, var(--colorBackground) 50%);
+}
+
+h1, #welcomeP {
+    text-align: center;
+}
+
+h1, #contact p {
+    font-size: 5rem;
+    font-family: "Gotu";
+    margin: 0px;
+    margin-bottom: 3rem;
+    padding-bottom: 1rem;
+}
+
+
+#welcomeP {
+    font-size: 3rem;
+    margin-top: -2rem;
+    color: var(--colorBackground);
+}
+
+@media only screen and (max-width: 800px) {
+    h1, #contact p {
+        font-size: 3rem;
+    }
+    #welcomeP {
+        font-size: 1.5rem;
+    }
+}
+
+#hi:hover {
+    background: linear-gradient(180deg, var(--colorDetal1) 50%, var(--colorBackground) 50%);
+}
+
+#me:hover {
+    background: linear-gradient(360deg, var(--colorDetal3) 50%, var(--colorBackground) 50%);
+}
+
+#projects {
+    margin-top:50px;
+    background-color: var(--colorDetal2);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.myProject {
+    margin: 10px;
+    margin-bottom: 30px;
+    background-color: var(--colorBackground);
+    padding: 10px 10px 0px 10px;
+}
+
+.imageProject {
+    width: 450px;
+    height: 250px;
+}
+
+.project-tile {
+    text-align: center;
+}
+
+.project-tile a:hover, .project-tile a:active {
+    transition: 0.2s background-color, 0.2s color;
+    background-color: var(--colorFont);
+    color: var(--colorBackground);
+}
+
+#tribute, #survey, #landing, #documentation {
+    background-size: cover;
+    background-position: center;
+}
+
+#tribute {
+    background-image: url("image/kawaImage.PNG");
+}
+
+#documentation {
+    background-image: url("image/dokumentacjaImage.PNG");
+}
+
+#landing {
+    background-image: url("image/motyleImage.PNG");
+}
+
+#survey {
+    background-image: url("image/ankietaImage.PNG");
+}
+
+#contact {
+    background: linear-gradient(3600deg, var(--colorBackground) 50%, var(--colorDetal3) 50%);
+}
+
+#contact p {
+    text-align: center;
+}
+
+#contact div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact div div {
+    padding-right: 50px;
+    font-size: 4rem;
+    
+}
+
+#contact a {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: none;
+    color: var(--colorFont);
+    transition: 0.2s color;
+}
+
+#contact a:hover, #contact a:active {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: var(--colorBackground);
+    background-color: var(--colorFont);
+    transition: 0.2s color, 0.2s background-color;
+}
+
+footer p {
+    text-align: center;
+}
